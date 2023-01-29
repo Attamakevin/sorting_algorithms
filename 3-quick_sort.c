@@ -35,7 +35,8 @@ int partition(int *array, size_t size, int low, int high)
 	int i = low - 1, j;
 
 	for (j = low; j <= high; j++)
-	{		if (array[j] < pivot_value)
+	{
+		if (array[j] < pivot_value)
 		{
 			i++;
 			swap(array, size, i, j);
